@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var circleDisplay: UIImageView!
+    @IBOutlet weak var trialButton: UIButton!
+    @IBOutlet weak var resultsLabel: UILabel!
+    
+    var blueCircle: UIImage!
+    var greenCircle: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Initialize the original state of the application.
+        trialButton.setTitle("Hold to start", for: [])
     }
 
     override func didReceiveMemoryWarning() {

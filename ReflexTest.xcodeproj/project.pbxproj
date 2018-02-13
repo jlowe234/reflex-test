@@ -97,8 +97,10 @@
 		3B2FBE902032631D0062FA69 /* ReflexTest */ = {
 			isa = PBXGroup;
 			children = (
-				3B2FBE912032631D0062FA69 /* AppDelegate.swift */,
-				3B2FBE932032631D0062FA69 /* ViewController.swift */,
+				3B2FBEC2203267210062FA69 /* Misc */,
+				3B2FBEBF203266D70062FA69 /* Model */,
+				3B2FBEC0203266E90062FA69 /* View */,
+				3B2FBEC1203266EF0062FA69 /* Controller */,
 				3B2FBE952032631D0062FA69 /* Main.storyboard */,
 				3B2FBE982032631D0062FA69 /* Assets.xcassets */,
 				3B2FBE9A2032631D0062FA69 /* LaunchScreen.storyboard */,
@@ -123,6 +125,36 @@
 				3B2FBEB32032631E0062FA69 /* Info.plist */,
 			);
 			path = ReflexTestUITests;
+			sourceTree = "<group>";
+		};
+		3B2FBEBF203266D70062FA69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B2FBEC0203266E90062FA69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B2FBEC1203266EF0062FA69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B2FBE932032631D0062FA69 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B2FBEC2203267210062FA69 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3B2FBE912032631D0062FA69 /* AppDelegate.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
