@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     // End the trial and display the results or ask to start another one.
-    @objc func stopTrial(gestureRecognizer: UITapGestureRecognizer) {
+    @objc func endTrial(gestureRecognizer: UITapGestureRecognizer) {
         // Verify if we really need to stop the timer.
         if (self.activeTrial && self.circleDisplay.image == self.greenCircle) {
             // Stop and reset the form.
