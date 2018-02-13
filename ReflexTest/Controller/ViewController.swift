@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         
         // Initialize the original state of the application.
         trialButton.setTitle("Hold to start", for: [])
+        blueCircle = UIImage().circle(diameter: 80, color: UIColor.blue)
+        greenCircle = UIImage().circle(diameter: 80, color: UIColor.green)
+        circleDisplay.image = blueCircle
+        
     }
 
     override func didReceiveMemoryWarning() {
