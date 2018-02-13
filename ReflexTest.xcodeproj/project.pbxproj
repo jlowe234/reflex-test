@@ -15,6 +15,8 @@
 		3B2FBEA72032631D0062FA69 /* ReflexTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FBEA62032631D0062FA69 /* ReflexTestTests.swift */; };
 		3B2FBEB22032631E0062FA69 /* ReflexTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FBEB12032631E0062FA69 /* ReflexTestUITests.swift */; };
 		3B2FBEC420326DD60062FA69 /* UIImage+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FBEC320326DD60062FA69 /* UIImage+Circle.swift */; };
+		3B2FBEC6203273240062FA69 /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FBEC5203273240062FA69 /* TestResults.swift */; };
+		3B2FBEC8203274E80062FA69 /* TimeTrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FBEC7203274E80062FA69 /* TimeTrial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3B2FBEB12032631E0062FA69 /* ReflexTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexTestUITests.swift; sourceTree = "<group>"; };
 		3B2FBEB32032631E0062FA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B2FBEC320326DD60062FA69 /* UIImage+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Circle.swift"; sourceTree = "<group>"; };
+		3B2FBEC5203273240062FA69 /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
+		3B2FBEC7203274E80062FA69 /* TimeTrial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		3B2FBEBF203266D70062FA69 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B2FBEC5203273240062FA69 /* TestResults.swift */,
+				3B2FBEC7203274E80062FA69 /* TimeTrial.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 			files = (
 				3B2FBE942032631D0062FA69 /* ViewController.swift in Sources */,
 				3B2FBEC420326DD60062FA69 /* UIImage+Circle.swift in Sources */,
+				3B2FBEC8203274E80062FA69 /* TimeTrial.swift in Sources */,
+				3B2FBEC6203273240062FA69 /* TestResults.swift in Sources */,
 				3B2FBE922032631D0062FA69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
