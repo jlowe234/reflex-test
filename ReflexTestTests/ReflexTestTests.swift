@@ -56,4 +56,40 @@ class ReflexTestTests: XCTestCase {
         
         XCTAssertEqual(timeTrialTest.countCompletedTrials(), expected, "There should be 5 trials logged.")
     }
+    
+    // Validate that the average is calculated correctly.
+    func testAverage() {
+        let expectedTestQty = 3
+        let expectedAverage = 4.0
+        for index in 1...3 {
+            let promise = expectation(description: "Time trial completed")
+            XCTAssertTrue(timeTrialTest.beginTimer(), "Timer should return successfully for 5 tries.")
+            
+            // Add 3 tests to the model. Stopping at 2, 4, 6.
+            let interval = 2 * index
+            Timer.scheduledTimer(withTimeInterval: TimeInterval(interval), repeats: false, block: { _ in
+                timeTrialTest.stopTimer()
+                promise.fulfill()
+            })
+            
+            waitForExpectations(timeout: 10, handler: nil)
+        }
+        
+        XCTAssertEqual(timeTrialTest.countCompletedTrials(), expectedTestQty, "There should be 3 tests.")
+        XCTAssertEqual(timeTrialTest.returnAverage(), expectedAverage, "Average time is not calculating correctly.")
+    }
+    
+    // Validate the JSON outputs as expected.
+    func testJSON() {
+        let initExpected = TestResults()
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(initExpected)
+            let expected = String(data: data, encoding: .utf8)
+            
+            XCTAssertEqual(timeTrialTest.returnResultsAsJSON(), expected!, "JSON does not output as expected")
+        } catch {
+            XCTFail("Couldn't create expectation because of \(error.localizedDescription)")
+        }
+    }
 }
